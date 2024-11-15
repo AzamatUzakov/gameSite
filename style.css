@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+main {
+    max-width: 1300px;
+    background-color: black;
+    margin: 0 auto;
+    color: white;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: black;
+    font-size: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    transition: .4s ease;
+
+}
+
+header a:hover {
+    color: cadetblue;
+    transition: .4s ease;
+}
+
+.hrefs {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.firstBlock {
+    height: 80vh;
+    width: 100%;
+    background-image: url(./img/hero-large.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 30px;
+}
+
+.firstBlock h1 {
+    margin: 10px 0;
+    font-size: 45px;
+}
+
+
+.secondBlock {
+    padding: 30px;
+}
+
+.flGameBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: white !important;
+    gap: 20px;
+
+}
+
+.flGameBox .item {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+    background-color: rgba(127, 255, 212, 0.192);
+    backdrop-filter: blur(17px);
+}
+
+.thirdBlock {
+    padding: 30px;
+}
+
+.flBox,
+.flBoxTw {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 13px;
+}
+
+.flBox img {
+    width: 300px;
+    object-fit: cover;
+}
+
+.flBoxTw img {
+    width: 300px;
+    object-fit: cover;
+}
+
+.fouthBlock {
+    height: 60vh;
+    width: 100%;
+    background-image: url(./img/testimonials-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.fivethBlock {
+    padding: 30px;
+}
+
+.posters {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+.posters img {
+    width: 300px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    color: white !important;
+}
+footer {
+    padding: 50px 30px;
+    background-image: url(./img/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 70px;
+    position: relative; /* Добавляем относительное позиционирование */
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Устанавливаем затемнение */
+    z-index: 1;
+}
+
+footer > * {
+    position: relative;
+    z-index: 2;
+}
+
+.hr {
+    border: 0;
+    height: 2px;
+    background-color: white !important;
+}
+
+.elem p {
+    font-size: 15px !important;
+    font-weight: 500 !important;
+}
+
+.midleBox p {
+    margin-left: -15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+footer a {
+    font-size: 15px;
+    text-decoration: none;
+    margin-right: 10px;
+    color: white;
+}
+
+/* ======== Адаптив для планшетов (768px и ниже) ======== */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        /* Позволяем строкам переноситься */
+        gap: 10px;
+        font-size: 18px;
+    }
+
+    .hrefs {
+        gap: 15px;
+    }
+
+    .flGameBox {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        fill: white !important;
+        gap: 20px;
+
+    }
+
+    .firstBlock h1 {
+        font-size: 35px;
+    }
+
+
+    .flBox img {
+        width: 250px;
+        object-fit: cover
+    }
+
+    .flBoxTw img {
+        width: 250px;
+        object-fit: cover;
+    }
+    .posters img {
+        width: 250px;
+    }
+
+    .flBox,
+    .flBoxTw {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 13px;
+    }
+
+    .posters {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .footer{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    .midleBox{
+        margin: 30px 0 50px;
+    }
+}
+
+/* ======== Адаптив для мобильных устройств (480px и ниже) ======== */
+@media (max-width: 480px) {
+    header {
+        display: block;
+        padding: 15px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .hrefs {
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .firstBlock {
+        height: 60vh;
+        padding: 15px;
+    }
+
+    .firstBlock h1 {
+        font-size: 25px;
+        /* Уменьшаем шрифт */
+    }
+    .firstBlock h2{
+        font-size: 15px;
+    }
+
+    .secondBlock,
+    .thirdBlock,
+    .fivethBlock {
+        padding: 15px;
+    }
+
+    .flGameBox .item {
+        padding: 5px;
+    }
+
+    .flBox img,
+    .flBoxTw img,
+    .posters img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .fouthBlock {
+        padding: 15px;
+    }
+    footer {
+        padding: 30px 20px;
+    }
+}

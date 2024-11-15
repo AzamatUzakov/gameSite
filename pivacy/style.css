@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather Sans", sans-serif;
+
+}
+body{
+    background-color: #f7f8f9;
+}
+main{
+    width: 1300px;
+    height: 100%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    padding: 20px 0 ;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+}
+ header img{
+    width: 150px;
+}
+a{
+    text-decoration: none;
+    margin-top:7px ;
+    font-weight: 400;
+    cursor: pointer;
+    color: #545454;
+    
+    transition: .4s ease;
+}
+a:hover{
+    font-size: 22px;
+    transition: .4s ease;
+}
+.listBody{
+    padding: 50px;
+    margin: 50px;
+    background-color: white;
+}
+p{
+    font-size: 15px;
+    color: #545454;
+}
+
+footer{
+    padding: 50px;
+    margin: 50px;
+    background-color: white;   
+text-align: center;
+
+color: #545454;}
+
+ul{
+    color: #545454;
+}
+
+footer a{
+    font-size: 15px;
+    color: black;
+}
+
+footer a:hover{
+font-size: 15px;
+}
+
+
+/* Адаптивный дизайн для планшетов (до 768px) */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 15px 0;
+        font-size: 18px;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    header img {
+        width: 120px;
+    }
+h1{
+    font-size:23px ;
+}
+    a {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .listBody,
+    footer {
+        padding: 30px;
+        margin: 30px 10px;
+    }
+
+    p, ul {
+        font-size: 14px;
+    }
+
+    footer a {
+        font-size: 14px;
+    }
+}
+
+/* Адаптивный дизайн для мобильных телефонов (до 480px) */
+@media (max-width: 480px) {
+    main {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    header {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    a {
+        font-size: 16px;
+        margin-top: 3px;
+    }
+
+    .listBody,
+    footer {
+        padding: 20px;
+        margin: 20px 5px;
+    }
+
+    p, ul {
+        font-size: 13px;
+    }
+
+    footer a {
+        font-size: 13px;
+    }
+}
